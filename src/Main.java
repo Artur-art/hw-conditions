@@ -62,20 +62,39 @@ public class Main {
 
             System.out.println("Задача №6");
             int one = 1;
-            int two = 2;
-            int free = 3;
-            if (one < free && two < free ){
-            System.out.println("наибольшее число равно "+free);
-            } else if (one > two && one > free) {
-                System.out.println("Наибольшее число равно " + one);
-            } else if (two > one && two > free) {
-                System.out.println("Наибольшее число равно "+two);
+            int two = 10;
+            int three = 10;
+            if (one > two){
+                if (one >= three){
+                    System.out.println("максимальное число "+one);
+                } else{
+                    System.out.println("Максимальное число "+three);
+                }
+
+            } else if (two > one) {
+                if (two >= three){
+                    System.out.println("Максимальное число " + two);
+                } else {
+                    System.out.println("Максимальное число " + three);
+                }
+            } else {
+                if(one > three){
+                    System.out.println("максимальное число " + one);
+                } else if (three > one) {
+                    System.out.println("максимальное число " + three);
+                } else {
+                    System.out.println("все 3 числа равны");
+                }
+
+                }
+            }
+
             }
 
         }
-        }
+
             
-        }
+
 
 
 
